@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>1057 | Pertemuan 3</title>
+    <style>
+        body {
+            background-color: black;
+            background-image: url("img/netflix.jpg");
+        }   
+        .title {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+        }
+        .card {
+            margin-top: 20px;
+            height: auto;
+            width: auto;
+            transition: transform .2s;
+            background-color: rgb(236, 236, 236);
+        }
+        .card:hover{
+            transform: scale(1.1);
+        }
+        .card-img-top {
+            margin: 10px 10px 10px 10px;
+            min-height: 23rem;
+            max-height: auto;
+            width: auto;
+        }
+        .red {
+            color: red;
+        }
+        .card-body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* font-weight: bold; */
+        }
+        .icon {
+            display: flex;
+            justify-content: right;
+            flex-direction: row;
+            transition: transform .9s;
+            margin-top: -40px;
+        }
+        .trash-icon:hover{
+            transform: scale(1.5);
+        }
+        .edit-icon:hover{
+            transform: scale(1.5);
+        }
+        footer {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px 40px;
+            color: white;
+        }
+        button{
+            border:none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title text-center mt-4">
+            <h1>CLIENT SIDE STATIC 2</h1>
+            <h4>- Layout and Grid -</h4>
+        </div>
+        <div class="row">
+            <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 mx-0.5 my-1">
+                <div class="card">
+                    <img src="img/Poster 1.jpg" class="card-img-top" alt="AVATAR">
+                    <div class="card-body">
+                        <h4 class="card-title">AVATAR</h4>
+                        <p class="card-text">Rating : 10.0</p>
+                        <div class="icon">
+                            <button type="button" class="edit-icon">
+                                <i class="bi bi-pencil-square mx-1"></i>
+                            </button>
+                            <button type="button" class="trash-icon">
+                                <i class="bi bi-trash3-fill red mx-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 mx-0.5 my-1">
+                <div class="card">
+                    <img src="img/Poster 2.jpg" class="card-img-top" alt="MARTIAN">
+                    <div class="card-body">
+                        <h4 class="card-title">MARTIAN</h4>
+                        <p class="card-text">Rating : 6.5</p>
+                        <div class="icon">
+                             <button type="button" class="edit-icon">
+                                <i class="bi bi-pencil-square mx-1"></i>
+                            </button>
+                            <button type="button" class="trash-icon">
+                                <i class="bi bi-trash3-fill red mx-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 mx-0.5 my-1">
+                <div class="card">
+                    <img src="img/Poster 3.jpg" class="card-img-top" alt="Kings of Future">
+                    <div class="card-body">
+                        <h4 class="card-title">Kings of Future</h4>
+                        <p class="card-text">Rating : 8.0</p>
+                        <div class="icon">
+                             <button type="button" class="edit-icon">
+                                <i class="bi bi-pencil-square mx-1"></i>
+                            </button>
+                            <button type="button" class="trash-icon">
+                                <i class="bi bi-trash3-fill red mx-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 mx-0.5 my-1">
+                <div class="card">
+                    <img src="img/Poster 4.jpg" class="card-img-top" alt="DIE HARD">
+                    <div class="card-body">
+                        <h4 class="card-title">DIE HARD</h4>
+                        <p class="card-text">Rating : 7.5</p>
+                        <div class="icon">
+                             <button type="button" class="edit-icon">
+                                <i class="bi bi-pencil-square mx-1"></i>
+                            </button>
+                            <button type="button" class="trash-icon">
+                                <i class="bi bi-trash3-fill red mx-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 mx-0.5 my-1">
+                <div class="card">
+                    <img src="img/Poster 5.png" class="card-img-top" alt="CHERRY">
+                    <div class="card-body">
+                        <h4 class="card-title">CHERRY</h4>
+                        <p class="card-text">Rating : 8.3</p>
+                        <div class="icon">
+                             <button type="button" class="edit-icon">
+                                <i class="bi bi-pencil-square mx-1"></i>
+                            </button>
+                            <button type="button" class="trash-icon">
+                                <i class="bi bi-trash3-fill red mx-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 mx-0.5 my-1">
+                <div class="card">
+                    <img src="img/Poster 6.jpg" class="card-img-top" alt="GIVER">
+                    <div class="card-body">
+                        <h4 class="card-title">GIVER</h4>
+                        <p class="card-text">Rating : 4.6</p>
+                        <div class="icon">
+                             <button type="button" class="edit-icon">
+                                <i class="bi bi-pencil-square mx-1"></i>
+                            </button>
+                            <button type="button" class="trash-icon">
+                                <i class="bi bi-trash3-fill red mx-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 mx-0.5 my-1">
+                <div class="card">
+                    <img src="img/Poster 7.jpg" class="card-img-top" alt="THE HILL">
+                    <div class="card-body">
+                        <h4 class="card-title">THE HILL</h4>
+                        <p class="card-text">Rating : 10.0</p>
+                        <div class="icon">
+                             <button type="button" class="edit-icon">
+                                <i class="bi bi-pencil-square mx-1"></i>
+                            </button>
+                            <button type="button" class="trash-icon">
+                                <i class="bi bi-trash3-fill red mx-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 mx-0.5 my-1">
+                <div class="card">
+                    <img src="img/Poster 8.jpg" class="card-img-top" alt="Moon Light">
+                    <div class="card-body">
+                        <h4 class="card-title">Moon Light (2016)</h4>
+                        <p class="card-text">Rating : 7.3</p>
+                        <div class="icon">
+                             <button type="button" class="edit-icon">
+                                <i class="bi bi-pencil-square mx-1"></i>
+                            </button>
+                            <button type="button" class="trash-icon">
+                                <i class="bi bi-trash3-fill red mx-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 mx-0.5 my-1">
+                <div class="card">
+                    <img src="img/Poster 9.jpg" class="card-img-top" alt="Doctor Who">
+                    <div class="card-body">
+                        <h4 class="card-title">Doctor Who</h4>
+                        <p class="card-text">Rating : 5.5</p>
+                        <div class="icon">
+                             <button type="button" class="edit-icon">
+                                <i class="bi bi-pencil-square mx-1"></i>
+                            </button>
+                            <button type="button" class="trash-icon">
+                                <i class="bi bi-trash3-fill red mx-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 mx-0.5 my-1">
+                <div class="card">
+                    <img src="img/Poster 10.jpg" class="card-img-top" alt="Encounter">
+                    <div class="card-body">
+                        <h4 class="card-title">Encounter</h4>
+                        <p class="card-text">Rating : 9.0</p>
+                        <div class="icon">
+                             <button type="button" class="edit-icon">
+                                <i class="bi bi-pencil-square mx-1"></i>
+                            </button>
+                            <button type="button" class="trash-icon">
+                                <i class="bi bi-trash3-fill red mx-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 mx-0.5 my-1">
+                <div class="card">
+                    <img src="img/Poster 11.jpg" class="card-img-top" alt="FREEDOM">
+                    <div class="card-body">
+                        <h4 class="card-title">FREEDOM</h4>
+                        <p class="card-text">Rating : 8.5</p>
+                        <div class="icon">
+                             <button type="button" class="edit-icon">
+                                <i class="bi bi-pencil-square mx-1"></i>
+                            </button>
+                            <button type="button" class="trash-icon">
+                                <i class="bi bi-trash3-fill red mx-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 mx-0.5 my-1">
+                <div class="card">
+                    <img src="img/Poster 12.jpg" class="card-img-top" alt="AFTER">
+                    <div class="card-body">
+                        <h4 class="card-title">AFTER (2019)</h4>
+                        <p class="card-text">Rating : 8.0</p>
+                        <div class="icon">
+                             <button type="button" class="edit-icon">
+                                <i class="bi bi-pencil-square mx-1"></i>
+                            </button>
+                            <button type="button" class="trash-icon">
+                                <i class="bi bi-trash3-fill red mx-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container text-center">
+        <p>&#169; 202410101057</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
